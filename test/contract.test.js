@@ -33,6 +33,8 @@ before(async () => {
 after(async () => instance?.stop());
 
 test("serves the built React application", async () => {
+  const health = await fetch(`${baseUrl}/health`);
+  assert.deepEqual(await health.json(), { status: "ok" });
   const response = await fetch(baseUrl);
   const html = await response.text();
   assert.equal(response.status, 200);

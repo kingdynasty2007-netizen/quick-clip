@@ -189,6 +189,9 @@ async function createQuickClipServer(options = {}) {
   app.disable("x-powered-by");
   app.set("trust proxy", 1);
   app.use(express.json({ limit: "64kb", strict: true }));
+  app.get("/health", (_request, response) => {
+    response.status(200).json({ status: "ok" });
+  });
 
   const server = http.createServer(app);
   const ioOptions = {

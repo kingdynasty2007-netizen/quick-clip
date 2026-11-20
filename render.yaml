@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: quick-clip
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm ci && npm run build
+    startCommand: node server.js
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production
