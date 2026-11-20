@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node server.js --dev",
     "build": "vite build",
+    "postinstall": "npm run build",
     "test": "node --test",
     "start": "npm run build && node server.js",
     "preview": "vite preview"
