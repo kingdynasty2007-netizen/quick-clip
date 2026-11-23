@@ -2,3 +2,11 @@ node_modules/
 dist/
 premium-audit.json
 .env
+.env.*
+!.env.example
+.serena/
+CODEX_PROMPT.md
+DESIGN.md
+*.log
+.DS_Store
+Thumbs.db

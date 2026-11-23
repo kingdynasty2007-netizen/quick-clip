@@ -1,7 +1,7 @@
 {
   "name": "quick-clip",
   "version": "1.0.0",
-  "description": "Real-time code sharing with auto-delete timer",
+  "description": "Temporary real-time rooms for sharing text, code, PDFs, and messages across devices.",
   "main": "server.js",
   "scripts": {
     "dev": "node server.js --dev",
@@ -12,10 +12,24 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": ">=18"
+    "node": "^20.19.0 || >=22.12.0"
   },
-  "author": "osigwe wisdom ",
+  "author": "Osigwe Wisdom",
   "license": "ISC",
+  "keywords": [
+    "file-sharing",
+    "react",
+    "socket.io",
+    "temporary-rooms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingdynasty2007-netizen/quick-clip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kingdynasty2007-netizen/quick-clip/issues"
+  },
+  "homepage": "https://quick-clip.onrender.com",
   "dependencies": {
     "express": "^4.18.2",
     "lucide-react": "^0.468.0",
